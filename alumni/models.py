@@ -7,4 +7,9 @@ class Alumni(models.Model):
     bio = models.TextField()
     photo = models.ImageField(upload_to='alumni_images/')
 
+    
+    def __str__(self):
+        return self.firstname + " " + self.lastname
+    
+    
 
